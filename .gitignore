@@ -1,0 +1,14 @@
+.vs/
+packages/
+Library.Contracts/obj/*
+Library.Contracts/bin/*
+Library.Data.Repository/bin/*
+Library.Data.Repository/obj/*
+Library.Data/bin/*
+Library.Dto/obj/*
+Library.Data/obj/*
+Library.Dto/bin/*
+Library.Services/bin/*
+Library.Services/obj/*
+Library.WebApi/bin/*
+Library.WebApi/obj/*

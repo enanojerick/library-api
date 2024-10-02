@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Data", "1. Data", "{5B80518D-8913-40F2-A036-D12A80D25DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Repository", "2. Repository", "{26E2E90C-9D3B-472A-8898-24DF907AB260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Business", "3. Business", "{B0989874-6AEC-458D-A61C-57DD505B7E78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Application", "4. Application", "{8501B0C7-3C27-4E5D-A536-801E1E7BC8FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Data", "Library.Data\Library.Data.csproj", "{F92945D8-C009-4473-8195-28B0DEFFE914}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Data.Repository", "Library.Data.Repository\Library.Data.Repository.csproj", "{10E97ACB-B79D-4B99-88D2-ED2DA6168037}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Contracts", "Library.Contracts\Library.Contracts.csproj", "{E4C2A879-2ACB-40A7-B803-79480DDDE67E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Dto", "Library.Dto\Library.Dto.csproj", "{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Services", "Library.Services\Library.Services.csproj", "{27F0B379-EF82-4FD0-900D-4599CAA1D494}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.WebApi", "Library.WebApi\Library.WebApi.csproj", "{9FDDB515-8FEA-4124-A336-5C9B91AFC040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F92945D8-C009-4473-8195-28B0DEFFE914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92945D8-C009-4473-8195-28B0DEFFE914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92945D8-C009-4473-8195-28B0DEFFE914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92945D8-C009-4473-8195-28B0DEFFE914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E97ACB-B79D-4B99-88D2-ED2DA6168037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E97ACB-B79D-4B99-88D2-ED2DA6168037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E97ACB-B79D-4B99-88D2-ED2DA6168037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E97ACB-B79D-4B99-88D2-ED2DA6168037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C2A879-2ACB-40A7-B803-79480DDDE67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C2A879-2ACB-40A7-B803-79480DDDE67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C2A879-2ACB-40A7-B803-79480DDDE67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C2A879-2ACB-40A7-B803-79480DDDE67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F0B379-EF82-4FD0-900D-4599CAA1D494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F0B379-EF82-4FD0-900D-4599CAA1D494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F0B379-EF82-4FD0-900D-4599CAA1D494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F0B379-EF82-4FD0-900D-4599CAA1D494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDDB515-8FEA-4124-A336-5C9B91AFC040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDDB515-8FEA-4124-A336-5C9B91AFC040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDDB515-8FEA-4124-A336-5C9B91AFC040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDDB515-8FEA-4124-A336-5C9B91AFC040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F92945D8-C009-4473-8195-28B0DEFFE914} = {5B80518D-8913-40F2-A036-D12A80D25DC3}
+		{10E97ACB-B79D-4B99-88D2-ED2DA6168037} = {26E2E90C-9D3B-472A-8898-24DF907AB260}
+		{E4C2A879-2ACB-40A7-B803-79480DDDE67E} = {B0989874-6AEC-458D-A61C-57DD505B7E78}
+		{C5DFC3A8-3BD1-4F0F-B88C-FE782D2126E5} = {B0989874-6AEC-458D-A61C-57DD505B7E78}
+		{27F0B379-EF82-4FD0-900D-4599CAA1D494} = {B0989874-6AEC-458D-A61C-57DD505B7E78}
+		{9FDDB515-8FEA-4124-A336-5C9B91AFC040} = {8501B0C7-3C27-4E5D-A536-801E1E7BC8FF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E390248-A91F-4854-9F9C-C5CAE0C43DB8}
+	EndGlobalSection
+EndGlobal

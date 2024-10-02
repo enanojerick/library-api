@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Library.WebApi.Controllers.BooksController.Get">
+            <summary>
+            Get All books
+            </summary>
+            <remarks>Retrieve a list of all books in the library.</remarks>
+        </member>
+        <member name="M:Library.WebApi.Controllers.BooksController.Get(System.Int32)">
+            <summary>
+            Get a specific book
+            </summary>
+            <remarks>Retrieve a specific book by its ID.</remarks>
+        </member>
+        <member name="M:Library.WebApi.Controllers.BooksController.Post(Library.Dto.Views.Book)">
+            <summary>
+            Add a new book
+            </summary>
+            <remarks>Add a new book to the library.</remarks>
+        </member>
+        <member name="M:Library.WebApi.Controllers.BooksController.Put(System.Int32,Library.Dto.Views.Book)">
+            <summary>
+            Update a book
+            </summary>
+            <remarks>Update an existing book by its ID.</remarks>
+        </member>
+    </members>
+</doc>
