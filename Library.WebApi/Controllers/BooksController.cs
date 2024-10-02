@@ -1,4 +1,5 @@
 ﻿using Library.Contracts;
+using Library.Data.Entities;
 using Library.Dto;
 using Library.Dto.Views;
 using Microsoft.AspNetCore.Mvc;
@@ -21,9 +22,10 @@ namespace Library.WebApi.Controllers
         /// <remarks>Retrieve a list of all books in the library.</remarks>
         [HttpGet]
         [Route("books")]
-        public IList<BookDto> Get()
+        public IActionResult Get()
         {
-            return _bookService.GetBooks();
+            var books = _bookService.GetBooks();
+            return books.Count() > 0 ? Ok(books) : BadRequest("List of books not found");
         }
 
         /// <summary>
@@ -32,10 +34,10 @@ namespace Library.WebApi.Controllers
         /// <remarks>Retrieve a specific book by its ID.</remarks>
         [HttpGet()]
         [Route("book/{id}")]
-        public BookDto Get(int Id)
+        public IActionResult Get(int id)
         {
-            var book = _bookService.GetBookById(Id);
-            return book != null ? book : new BookDto();
+            var book = _bookService.GetBookById(id);
+            return book != null ? Ok(book) : BadRequest("No book was found");
         }
 
         /// <summary>
@@ -56,7 +58,7 @@ namespace Library.WebApi.Controllers
 
             var savedBook = _bookService.AddBook(bookDto);
 
-            return savedBook != null ? Ok(savedBook) : BadRequest("No Record was Saved");
+            return savedBook != null ? Ok(savedBook) : BadRequest("Book was not saved");
         }
 
         /// <summary>
@@ -81,7 +83,7 @@ namespace Library.WebApi.Controllers
                 return Ok(updatedBook);
             }
 
-            return BadRequest("No Record was Updated");
+            return BadRequest("Book was not updated");
            
         }
     }
